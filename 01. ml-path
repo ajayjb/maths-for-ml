@@ -1,0 +1,1009 @@
+# Mathematics and Machine Learning Roadmap: Beginner to Proficient ML Engineer
+
+**Purpose:** Build the mathematical foundation, practical
+machine-learning skills, and engineering ability needed to develop,
+evaluate, deploy, and maintain ML systems.
+
+**Starting point:** Beginner-level mathematics, with
+software-development experience and an interest in moving into ML/AI
+engineering.
+
+**Recommended duration:** 9--12 months at a sustainable pace. This is a
+roadmap, not a race. If a topic is difficult, spend longer and complete
+the mastery checks before moving on.
+
+**Suggested weekly commitment:** 20--30 focused hours: - Weekdays: 2--4
+hours per day. - Weekends: 4--7 hours per day. - Include breaks and at
+least one lighter/recovery period each week.
+
+> Important: Do not wait until all mathematics is finished before
+> starting ML. Learn the mathematics and implement the corresponding ML
+> ideas in parallel.
+
+------------------------------------------------------------------------
+
+## How to use this roadmap
+
+For each topic, follow this cycle:
+
+1.  **Understand:** Learn the concept and explain it in your own words.
+2.  **Work by hand:** Solve small numerical examples without a computer.
+3.  **Implement:** Reproduce the calculation using Python and NumPy.
+4.  **Apply:** Use it in a real dataset or ML algorithm.
+5.  **Review:** Write down mistakes, confusing points, and questions.
+
+### Definition of proficiency
+
+You are making good progress when you can:
+
+-   Explain what an algorithm is doing, not only call it from a library.
+-   Prepare data without leakage and choose suitable validation methods.
+-   Build baseline models and compare them using appropriate metrics.
+-   Diagnose overfitting, underfitting, data problems, and poor
+    generalization.
+-   Explain the mathematics behind common models at an intuitive and
+    working level.
+-   Implement selected algorithms from scratch for learning.
+-   Deploy a model behind an API, monitor it, and manage model/data
+    versions.
+-   Read technical documentation and papers with enough understanding to
+    reproduce practical ideas.
+
+You do **not** need to prove every theorem or derive every advanced
+result to work effectively as an ML engineer.
+
+------------------------------------------------------------------------
+
+# Part 1 --- Mathematics foundations
+
+## Phase 1: Arithmetic, numbers, and algebra
+
+**Duration:** 2--3 weeks
+
+### Topics
+
+#### Number systems and arithmetic
+
+-   Natural numbers, whole numbers, integers, rational numbers,
+    irrational numbers, and real numbers.
+-   Number line, ordering, absolute value, intervals, and inequalities.
+-   Addition, subtraction, multiplication, and division.
+-   Negative-number rules and order of operations.
+-   Fractions, decimals, percentages, ratios, proportions, and rates.
+-   Factors, multiples, prime numbers, GCD/HCF, and LCM.
+-   Rounding, estimation, significant figures, and scientific notation.
+
+#### Powers, roots, and logarithms
+
+-   Exponents and exponent laws.
+-   Zero, negative, and fractional exponents.
+-   Square roots, cube roots, and radicals.
+-   Exponential notation and scientific notation.
+-   Meaning of logarithms and conversion between exponential and
+    logarithmic forms.
+-   Common logarithm, natural logarithm (`ln`), and base-2 logarithm.
+-   Product, quotient, power, root, reciprocal, and change-of-base
+    rules.
+-   Exponential and logarithmic equations.
+-   Logarithmic growth and exponential growth.
+
+#### Algebra
+
+-   Variables, constants, coefficients, terms, and expressions.
+-   Simplifying expressions and combining like terms.
+-   Distributive property and algebraic identities.
+-   Factorization and expansion.
+-   Linear equations, inequalities, and simultaneous equations.
+-   Rearranging formulas.
+-   Quadratic equations, factoring, completing the square, and quadratic
+    formula.
+-   Basic complex-number arithmetic.
+
+### Practice
+
+-   Solve 10--20 short problems on study days.
+-   Rearrange formulas such as `y = mx + c` to isolate each variable.
+-   Calculate powers and logarithms by hand, then verify with Python.
+-   Translate word problems into equations.
+
+### Mastery check
+
+-   Manipulate fractions, powers, and algebraic expressions confidently.
+-   Solve linear and quadratic equations.
+-   Explain what a logarithm means and use its laws correctly.
+-   Rearrange a formula without losing track of signs or operations.
+
+------------------------------------------------------------------------
+
+## Phase 2: Functions, graphs, and coordinate geometry
+
+**Duration:** 1--2 weeks
+
+### Topics
+
+-   Cartesian coordinates, axes, quadrants, and ordered pairs.
+-   Slope, intercepts, distance, and midpoint.
+-   Relations and functions; function notation `f(x)`.
+-   Domain, range, input, and output.
+-   Linear, quadratic, polynomial, exponential, and logarithmic
+    functions.
+-   Function composition and inverse functions.
+-   Piecewise functions and transformations.
+-   Increasing/decreasing functions, symmetry, and turning points.
+-   Sequences and basic summation notation.
+-   Basic trigonometry: radians, sine, cosine, tangent, and unit-circle
+    intuition.
+
+### Practice
+
+-   Sketch functions by hand.
+-   Use Python/Matplotlib to plot the same functions.
+-   Explain how changing a parameter changes a graph.
+-   Interpret slope and intercept in a real dataset.
+
+### Mastery check
+
+-   Read and sketch common function graphs.
+-   Identify a function's domain and range.
+-   Explain slope as a rate of change.
+-   Understand why functions are used to represent model predictions.
+
+------------------------------------------------------------------------
+
+## Phase 3: Descriptive statistics and exploratory data analysis
+
+**Duration:** 2 weeks
+
+### Topics
+
+-   Population, sample, observations, features, and targets.
+-   Categorical, numerical, discrete, and continuous data.
+-   Frequency tables and visual summaries.
+-   Mean, median, mode, weighted mean.
+-   Minimum, maximum, range, quartiles, percentiles, and IQR.
+-   Variance and standard deviation.
+-   Population versus sample variance.
+-   Outliers and robust statistics.
+-   Skewness and distribution shape.
+-   Covariance and correlation.
+-   Pearson correlation; correlation versus causation.
+-   Histograms, box plots, scatter plots, and density plots.
+-   Missing values and basic data-quality checks.
+
+### Python practice
+
+Use: - NumPy - pandas - Matplotlib - Seaborn
+
+Tasks: - Load a CSV dataset. - Inspect shape, data types, missing
+values, and duplicates. - Calculate summary statistics manually and with
+pandas. - Plot distributions and relationships. - Write a short report
+describing what the data shows.
+
+### Mastery check
+
+Given an unfamiliar dataset, you can inspect it, summarize it, identify
+suspicious values, visualize important features, and explain limitations
+without jumping to causal conclusions.
+
+------------------------------------------------------------------------
+
+## Phase 4: Probability and statistical inference
+
+**Duration:** 3--4 weeks
+
+### Probability foundations
+
+-   Experiments, outcomes, sample spaces, and events.
+-   Complements, unions, and intersections.
+-   Addition and multiplication rules.
+-   Mutually exclusive and independent events.
+-   Conditional probability.
+-   Bayes' theorem.
+-   Tree diagrams and contingency tables.
+-   Permutations, combinations, and counting.
+
+### Random variables and distributions
+
+-   Discrete and continuous random variables.
+-   PMF, PDF, and CDF.
+-   Expected value and variance.
+-   Joint, marginal, and conditional distributions.
+-   Independence of random variables.
+-   Covariance and correlation.
+-   Bernoulli and binomial distributions.
+-   Categorical and multinomial distributions.
+-   Uniform, normal, and Poisson distributions.
+-   Exponential distribution.
+-   Sampling and sampling distributions.
+-   Law of Large Numbers.
+-   Central Limit Theorem.
+
+### Statistical inference
+
+-   Population parameters versus sample statistics.
+-   Standard error.
+-   Confidence intervals and their interpretation.
+-   Hypothesis testing.
+-   Null and alternative hypotheses.
+-   P-values and common misinterpretations.
+-   Type I and Type II errors.
+-   Statistical power (conceptual introduction).
+-   Multiple comparisons and why they matter.
+-   Practical significance versus statistical significance.
+-   Bootstrap intuition.
+
+### ML-specific probability and statistics
+
+-   Likelihood and log likelihood.
+-   Maximum likelihood estimation (MLE).
+-   Maximum a posteriori estimation (MAP).
+-   Prior, likelihood, and posterior.
+-   Bias and variance.
+-   Sampling bias and selection bias.
+-   Data leakage.
+-   Calibration and uncertainty (introductory).
+
+### Practice
+
+-   Simulate coin tosses, dice, and random variables in NumPy.
+-   Simulate sampling distributions and the Central Limit Theorem.
+-   Calculate confidence intervals on a small dataset.
+-   Compare two groups while stating assumptions and limitations.
+-   Derive likelihoods for simple Bernoulli and Gaussian examples.
+
+### Mastery check
+
+-   Explain conditional probability and Bayes' theorem.
+-   Calculate expectation and variance for simple distributions.
+-   Explain what a confidence interval and p-value do and do not mean.
+-   Explain likelihood, log likelihood, MLE, and the bias--variance
+    trade-off.
+
+------------------------------------------------------------------------
+
+## Phase 5: Linear algebra
+
+**Duration:** 3--4 weeks
+
+This is one of the most important mathematics areas for ML.
+
+### Topics
+
+-   Scalars, vectors, matrices, and tensors.
+-   Dimensions, shape, rows, columns, and indexing.
+-   Vector addition, subtraction, and scalar multiplication.
+-   Vector norms and distances: L1, L2, and L-infinity.
+-   Dot product and geometric interpretation.
+-   Angles and cosine similarity.
+-   Matrix addition, multiplication, transpose, and identity.
+-   Matrix-vector multiplication.
+-   Systems of linear equations and `Ax = b`.
+-   Gaussian elimination and row operations.
+-   Linear independence and dependence.
+-   Span, basis, and dimension.
+-   Rank and null space (working intuition).
+-   Inverse of a matrix and when an inverse does not exist.
+-   Orthogonality and projections.
+-   Eigenvalues and eigenvectors.
+-   Positive-definite and positive-semidefinite matrices (intuition).
+-   Singular Value Decomposition (SVD).
+-   Principal Component Analysis (PCA) connection.
+
+### Python practice
+
+-   Create vectors and matrices with NumPy.
+-   Check shapes and dimensions.
+-   Implement dot products and matrix multiplication.
+-   Solve small linear systems.
+-   Use `numpy.linalg` for rank, inverse/solve, eigenvalues, and SVD.
+-   Implement cosine similarity.
+-   Perform PCA on a small dataset and visualize the result.
+
+### Mastery check
+
+-   Track matrix dimensions before multiplying.
+-   Explain dot product geometrically and algebraically.
+-   Solve a small linear system.
+-   Explain linear independence, rank, eigenvectors, and PCA at a
+    practical level.
+-   Understand why dense neural-network layers use matrix
+    multiplication.
+
+------------------------------------------------------------------------
+
+## Phase 6: Calculus and optimization
+
+**Duration:** 4--5 weeks
+
+### Single-variable calculus
+
+-   Functions, limits, and continuity.
+-   Average rate of change and instantaneous rate of change.
+-   Derivative as slope and sensitivity.
+-   Derivative rules: constant, power, sum, product, and quotient.
+-   Chain rule.
+-   Derivatives of exponential and logarithmic functions.
+-   Critical points and basic curve analysis.
+-   Basic integration and area-under-the-curve intuition.
+-   Fundamental Theorem of Calculus (conceptual).
+
+### Multivariable calculus
+
+-   Functions of multiple variables.
+-   Partial derivatives.
+-   Gradient vectors.
+-   Directional derivatives.
+-   Chain rule for multiple variables.
+-   Jacobian matrix.
+-   Hessian matrix and second derivatives.
+-   Gradients of simple vector/matrix expressions (as needed).
+
+### Optimization
+
+-   Objective and loss functions.
+-   Local and global minima.
+-   Gradient descent.
+-   Learning rate and convergence.
+-   Batch, stochastic, and mini-batch gradient descent.
+-   Momentum and adaptive optimizers: high-level understanding.
+-   Convex sets and convex functions (intuition).
+-   Convex versus non-convex optimization.
+-   Regularization and constrained optimization.
+-   Numerical issues: exploding/vanishing values and gradient clipping
+    (introductory).
+
+### Practice
+
+-   Differentiate functions by hand.
+-   Verify derivatives numerically with finite differences.
+-   Implement gradient descent for a simple function.
+-   Implement linear regression with gradient descent.
+-   Plot loss over training iterations.
+-   Experiment with learning rates.
+
+### Mastery check
+
+-   Explain derivatives and gradients in plain language.
+-   Apply the chain rule.
+-   Calculate partial derivatives for simple functions.
+-   Implement gradient descent and explain why parameters change.
+-   Diagnose a learning rate that is too high or too low.
+
+------------------------------------------------------------------------
+
+# Part 2 --- Practical machine learning
+
+## Phase 7: Python and the data-science toolchain
+
+**Duration:** 2--3 weeks, overlapping with mathematics
+
+If you already know Python, use this phase to strengthen the ML-specific
+parts rather than repeating beginner programming.
+
+### Python
+
+-   Functions, modules, classes, exceptions, and virtual environments.
+-   Iteration and comprehensions.
+-   Type hints and readable code.
+-   Debugging and testing.
+-   Jupyter notebooks and scripts.
+-   Basic profiling and performance awareness.
+
+### Essential libraries
+
+-   NumPy: arrays, broadcasting, vectorization, random numbers, linear
+    algebra.
+-   pandas: loading, filtering, joins, grouping, missing values, and
+    transformations.
+-   Matplotlib/Seaborn: visualization.
+-   SciPy: scientific routines and statistics.
+-   scikit-learn: preprocessing, pipelines, estimators, metrics, and
+    model selection.
+
+### Engineering habits
+
+-   Git and GitHub.
+-   Reproducible environments and dependency management.
+-   Random seeds and reproducibility.
+-   Project structure.
+-   Unit tests for data transformations.
+-   Logging and configuration.
+
+### Project
+
+Build a clean exploratory-data-analysis repository with: - Data
+dictionary. - Data-quality report. - Reproducible notebook or script. -
+Visualizations. - Findings and limitations in a README.
+
+------------------------------------------------------------------------
+
+## Phase 8: Core supervised machine learning
+
+**Duration:** 4--5 weeks
+
+### ML foundations
+
+-   What ML is and when it is useful.
+-   Supervised, unsupervised, and reinforcement learning (overview).
+-   Features, labels, training, validation, and test sets.
+-   Generalization.
+-   Underfitting and overfitting.
+-   Baselines.
+-   Data leakage.
+-   Cross-validation.
+-   Bias--variance trade-off.
+
+### Regression
+
+-   Mean baseline.
+-   Linear regression.
+-   Multiple linear regression.
+-   Polynomial regression.
+-   Regularization: Ridge, Lasso, and Elastic Net.
+-   Assumptions and limitations.
+-   Residual analysis.
+
+### Classification
+
+-   Logistic regression.
+-   k-Nearest Neighbors.
+-   Naive Bayes.
+-   Support Vector Machines.
+-   Decision trees.
+-   Random forests.
+-   Gradient boosting.
+-   Introductory XGBoost, LightGBM, or CatBoost.
+
+### Evaluation
+
+Regression: - MAE, MSE, RMSE, and R-squared. - Residual analysis.
+
+Classification: - Confusion matrix. - Accuracy, precision, recall, and
+F1. - ROC curve and AUC. - Precision--recall curve and average
+precision. - Threshold selection. - Class imbalance and suitable
+metrics. - Probability calibration (introductory).
+
+### Workflow skills
+
+-   Train/validation/test split.
+-   Stratified splitting.
+-   Preprocessing pipelines.
+-   Imputation.
+-   One-hot and ordinal encoding.
+-   Scaling and normalization.
+-   Feature selection and feature engineering.
+-   Hyperparameter tuning.
+-   Cross-validation.
+-   Error analysis.
+
+### Projects
+
+1.  **House-price prediction:** regression, leakage prevention, residual
+    analysis, and model comparison.
+2.  **Customer churn prediction:** classification, class imbalance,
+    precision/recall, threshold choice, and explainability.
+3.  **Tabular benchmark:** compare a linear model, random forest, and
+    gradient boosting using a consistent validation process.
+
+### Mastery check
+
+You can build an end-to-end tabular ML workflow, select metrics that
+match the problem, compare models fairly, and explain errors and
+limitations.
+
+------------------------------------------------------------------------
+
+## Phase 9: Unsupervised learning and dimensionality reduction
+
+**Duration:** 2--3 weeks
+
+### Topics
+
+-   Clustering problem formulation.
+-   k-Means and its limitations.
+-   Hierarchical clustering.
+-   DBSCAN.
+-   Gaussian mixture models (introductory).
+-   PCA.
+-   Dimensionality reduction versus feature selection.
+-   t-SNE and UMAP: visualization use and limitations.
+-   Anomaly detection basics.
+-   Cluster evaluation: silhouette score and practical inspection.
+
+### Project
+
+Customer segmentation: - Clean and scale customer data. - Explore
+features. - Apply k-Means and one alternative. - Select and inspect
+clusters. - Explain why the clusters may or may not be useful to a
+business.
+
+------------------------------------------------------------------------
+
+## Phase 10: Feature engineering, model interpretation, and reliable evaluation
+
+**Duration:** 2--3 weeks
+
+### Topics
+
+-   Missing-data mechanisms (introductory).
+-   Outlier treatment and robust methods.
+-   Categorical feature handling.
+-   Date/time and text-derived features.
+-   Transformations and log transforms.
+-   Feature scaling and when it matters.
+-   Feature selection.
+-   Permutation importance.
+-   Partial dependence and individual conditional expectation.
+-   SHAP concepts and responsible interpretation.
+-   Learning curves and validation curves.
+-   Error analysis by segment.
+-   Grouped, time-based, and stratified validation.
+-   Data leakage patterns.
+-   Model calibration.
+-   Fairness and subgroup performance.
+
+### Project
+
+Take one previous project and improve it through better validation,
+feature engineering, error analysis, and interpretation. Record what
+improved and what did not.
+
+------------------------------------------------------------------------
+
+# Part 3 --- Deep learning
+
+## Phase 11: Neural-network foundations
+
+**Duration:** 3--4 weeks
+
+### Mathematics and concepts
+
+-   Perceptron.
+-   Neurons, weights, biases, and layers.
+-   Forward propagation.
+-   Activation functions: sigmoid, tanh, ReLU, and variants.
+-   Output layers for regression and classification.
+-   Loss functions: MSE, binary cross-entropy, and categorical
+    cross-entropy.
+-   Softmax.
+-   Logits and probabilities.
+-   Computational graphs.
+-   Backpropagation.
+-   Chain rule applied to neural networks.
+-   Weight initialization.
+-   Batch size and epochs.
+-   Learning-rate schedules.
+-   Regularization, dropout, and early stopping.
+-   Batch normalization and layer normalization (conceptual and
+    practical).
+
+### Framework
+
+Choose **PyTorch** as the primary framework initially.
+
+Learn: - Tensors and tensor shapes. - CPU/GPU device handling. -
+Autograd. - `nn.Module`. - Datasets and DataLoaders. - Optimizers. -
+Training and evaluation loops. - Saving and loading checkpoints. -
+Reproducibility and experiment tracking basics.
+
+### Projects
+
+1.  Implement a small neural network using NumPy to understand forward
+    and backward propagation.
+2.  Train a classifier on a standard dataset using PyTorch.
+3.  Compare a neural network with a strong classical ML baseline.
+
+### Mastery check
+
+Explain forward propagation, loss calculation, backpropagation, and
+parameter updates. Be able to write and debug a basic PyTorch training
+loop.
+
+------------------------------------------------------------------------
+
+## Phase 12: Deep-learning architectures
+
+**Duration:** 4--5 weeks
+
+### Topics
+
+-   Multi-layer perceptrons in more depth.
+-   Convolutional neural networks (CNNs).
+-   Convolution, filters, stride, padding, and pooling.
+-   Image classification and augmentation.
+-   Sequence modelling.
+-   Recurrent neural networks (RNNs).
+-   LSTM and GRU concepts.
+-   Attention mechanism.
+-   Query, Key, and Value.
+-   Self-attention.
+-   Positional encoding.
+-   Transformer encoder and decoder concepts.
+-   Embeddings.
+-   Transfer learning and fine-tuning.
+-   GPU memory and batch-size trade-offs.
+
+### Projects
+
+-   Image classification using transfer learning.
+-   Text classification using a pretrained transformer.
+-   A small sequence or time-series experiment if relevant to your
+    target work.
+
+### Mastery check
+
+Understand when CNNs, recurrent architectures, and transformers are
+appropriate. Be able to fine-tune a pretrained model and evaluate it
+properly.
+
+------------------------------------------------------------------------
+
+# Part 4 --- Modern AI and LLM engineering
+
+## Phase 13: NLP, transformers, and large language models
+
+**Duration:** 4--5 weeks
+
+### NLP foundations
+
+-   Text normalization and tokenization.
+-   Vocabulary and subword tokenization.
+-   Word embeddings.
+-   Semantic similarity.
+-   Language-model objectives.
+-   Transformer architecture.
+-   Attention and context windows.
+-   Pretraining versus fine-tuning.
+-   Inference and decoding.
+-   Temperature, top-k, and top-p sampling.
+
+### LLM application engineering
+
+-   Prompt design and structured outputs.
+-   Tool/function calling.
+-   Embedding models.
+-   Vector search and approximate nearest neighbours.
+-   Retrieval-Augmented Generation (RAG).
+-   Chunking and metadata.
+-   Hybrid search and reranking.
+-   Retrieval evaluation.
+-   Grounding and citations.
+-   Context-window management.
+-   Hallucination and failure analysis.
+-   LLM evaluation datasets.
+-   Guardrails and prompt-injection awareness.
+-   Privacy and sensitive-data handling.
+
+### Fine-tuning concepts
+
+-   Supervised fine-tuning.
+-   Parameter-efficient fine-tuning.
+-   LoRA and QLoRA concepts.
+-   Dataset quality.
+-   Training versus inference cost.
+-   When prompting or RAG is preferable to fine-tuning.
+
+### Projects
+
+1.  Semantic search over a document collection.
+2.  RAG application with retrieval evaluation and citations.
+3.  Tool-using assistant with structured outputs and robust error
+    handling.
+
+Do not judge an LLM application only by a few impressive examples. Build
+a repeatable evaluation dataset and measure retrieval and answer
+quality.
+
+------------------------------------------------------------------------
+
+# Part 5 --- ML engineering and production
+
+## Phase 14: Deployment, MLOps, and production systems
+
+**Duration:** 4--5 weeks, then ongoing
+
+### Model serving
+
+-   Batch inference versus online inference.
+-   REST APIs and request validation.
+-   Model loading and prediction endpoints.
+-   Latency, throughput, and concurrency.
+-   CPU versus GPU inference.
+-   Batching and caching.
+-   Model serialization and versioning.
+-   Docker.
+-   Cloud deployment fundamentals.
+
+### Data and model lifecycle
+
+-   Data validation and schema checks.
+-   Training pipelines.
+-   Experiment tracking.
+-   Model registry concepts.
+-   Dataset and artifact versioning.
+-   Reproducible training.
+-   CI/CD for ML.
+-   Scheduled retraining and retraining triggers.
+-   Feature pipelines and feature stores (conceptual first).
+
+### Monitoring
+
+-   API health and latency.
+-   Prediction and error monitoring.
+-   Data drift and concept drift.
+-   Feature distribution monitoring.
+-   Model performance when labels become available.
+-   Alerting and rollback.
+-   Auditability and reproducibility.
+
+### Responsible ML
+
+-   Privacy and data minimization.
+-   Bias and fairness evaluation.
+-   Explainability and limitations.
+-   Security of data and model endpoints.
+-   Human review for high-impact decisions.
+
+### Project
+
+Deploy one trained model behind an API using Docker. Include: - Input
+validation. - Model and dependency versioning. - Automated tests. -
+Logging and monitoring. - A reproducible training process. -
+Documentation and deployment instructions.
+
+------------------------------------------------------------------------
+
+# Part 6 --- Capstone and professional readiness
+
+## Phase 15: Build two substantial end-to-end projects
+
+**Duration:** 4--6 weeks
+
+Build projects that demonstrate both ML understanding and software
+engineering ability.
+
+### Capstone A: Business prediction system
+
+Possible problem: - Customer churn prediction. - Sales forecasting. -
+Lead conversion prediction. - Demand forecasting.
+
+Deliverables: - Problem statement and success metric. - Data-quality and
+exploratory analysis. - Baseline. - Feature engineering. - Correct
+validation strategy. - Model comparison. - Error analysis. - Model
+interpretation. - API deployment. - Monitoring plan. - README with
+reproducible steps.
+
+### Capstone B: LLM application
+
+Possible problem: - Document intelligence and RAG. - Knowledge-base
+assistant. - Support-ticket classification and retrieval. - Tool-using
+workflow assistant.
+
+Deliverables: - Data ingestion. - Chunking and indexing. - Retrieval and
+reranking. - Answer generation. - Evaluation dataset. - Retrieval and
+answer metrics. - Hallucination and failure analysis. - Security and
+privacy considerations. - Deployment and monitoring.
+
+### Portfolio standards
+
+For each project: - Keep code in a clean Git repository. - Explain the
+problem and why ML is appropriate. - Include a simple baseline. -
+Document data sources and limitations. - Prevent data leakage. - Explain
+metric selection. - Include reproducible setup and run instructions. -
+Show examples of failure, not only successful predictions. - State what
+you would improve next.
+
+------------------------------------------------------------------------
+
+# Suggested 9--12 month timeline
+
+This timeline groups the phases into a realistic sequence. Extend any
+phase where the mastery checks are not met.
+
+  -----------------------------------------------------------------------
+  Month                   Focus                   Main outcome
+  ----------------------- ----------------------- -----------------------
+  1                       Arithmetic, algebra,    Mathematical fluency
+                          exponents, logarithms,  
+                          functions               
+
+  2                       Statistics,             Understand uncertainty
+                          probability, inference  and data
+
+  3                       Linear algebra          Understand vector and
+                                                  matrix operations
+
+  4                       Calculus and            Understand gradients
+                          optimization            and training
+
+  5                       Python ML stack and     Build reliable
+                          supervised ML           classical ML models
+
+  6                       Unsupervised ML,        Improve model quality
+                          feature engineering,    and analysis
+                          evaluation              
+
+  7                       Neural networks and     Train and debug neural
+                          PyTorch                 networks
+
+  8                       Deep-learning           Work with modern
+                          architectures and       deep-learning models
+                          transformers            
+
+  9                       NLP, LLMs, RAG,         Build LLM applications
+                          evaluation              
+
+  10                      Deployment and MLOps    Serve and monitor
+                                                  models
+
+  11                      Capstone projects       Demonstrate end-to-end
+                                                  capability
+
+  12                      Consolidation,          Strengthen gaps and
+                          reproduction, interview professional readiness
+                          preparation             
+  -----------------------------------------------------------------------
+
+If you have more time each week, you may progress faster. Do not
+compress practice merely to meet a calendar date.
+
+------------------------------------------------------------------------
+
+# Weekly study routine
+
+## Weekdays: approximately 2--4 hours
+
+  Activity                                                Time
+  ----------------------------------------------- ------------
+  Recall and review previous material               15--20 min
+  Learn new concepts                                45--60 min
+  Pen-and-paper mathematics or coding exercises     45--60 min
+  Implement a small example                         30--45 min
+  Summarize and record mistakes                     10--15 min
+
+## Weekends: approximately 4--7 hours per day
+
+  Activity                                Time
+  ------------------------------- ------------
+  Deeper concept study              1--2 hours
+  Written problem solving           1--2 hours
+  Python implementation             1--2 hours
+  Weekly review or mini-project         1 hour
+
+Take breaks. A focused 2-hour session is more useful than several hours
+of exhausted study.
+
+------------------------------------------------------------------------
+
+# Recommended learning resources
+
+Use one main resource per subject. Avoid collecting too many courses and
+switching constantly.
+
+## Mathematics
+
+-   **Khan Academy:** arithmetic, algebra, logarithms, statistics,
+    probability, and calculus.
+-   **3Blue1Brown:** visual intuition for linear algebra, calculus, and
+    neural networks.
+-   **Mathematics for Machine Learning** by Deisenroth, Faisal, and Ong:
+    linear algebra, analytic geometry, matrix decompositions, vector
+    calculus, probability, and optimization.
+-   **MIT OpenCourseWare:** deeper linear algebra, probability, and
+    calculus lectures.
+
+## Python and data analysis
+
+-   **Python documentation:** language fundamentals.
+-   **NumPy documentation:** arrays, broadcasting, and linear algebra.
+-   **pandas documentation:** data manipulation.
+-   **Matplotlib documentation:** plotting and visualization.
+-   **SciPy documentation:** scientific computing.
+
+## Classical ML
+
+-   **An Introduction to Statistical Learning (ISLR):** accessible
+    statistical learning with practical examples.
+-   **scikit-learn documentation:** estimators, pipelines,
+    preprocessing, metrics, and model selection.
+-   **Hands-On Machine Learning with Scikit-Learn, Keras, and
+    TensorFlow:** practical ML workflows.
+
+## Deep learning
+
+-   **Dive into Deep Learning:** theory and implementation.
+-   **PyTorch tutorials:** practical framework skills.
+-   **fast.ai:** practical deep-learning learning path.
+
+## LLMs
+
+-   **Hugging Face Course:** transformers, tokenizers, datasets, and
+    fine-tuning.
+-   **Hugging Face documentation:** model usage and ecosystem.
+-   **Full Stack Deep Learning:** practical AI systems and production
+    concerns.
+
+Check the current versions and course availability before committing to
+a resource.
+
+------------------------------------------------------------------------
+
+# What to implement from scratch
+
+Using libraries is essential in real projects, but implementing small
+examples from scratch builds understanding.
+
+  Topic                    Implement
+  ------------------------ -----------------------------------------------------
+  Descriptive statistics   Mean, variance, standard deviation
+  Probability              Coin/dice simulations
+  Linear algebra           Dot product and matrix multiplication
+  Linear regression        Closed-form solution and gradient descent
+  Logistic regression      Sigmoid, log loss, gradient update
+  k-Nearest Neighbors      Distance and nearest-neighbour selection
+  k-Means                  Assignment and centroid update steps
+  Decision tree            A small split using Gini or entropy
+  Neural network           Forward pass and backpropagation for a tiny network
+  Evaluation               Confusion matrix and classification metrics
+
+Do not try to replace production libraries with your own
+implementations. These exercises are for learning and verification.
+
+------------------------------------------------------------------------
+
+# Progress tracker
+
+Use this tracker to record completion and confidence. Do not mark a
+phase complete just because you watched the lessons.
+
+  Phase   Topic                                   Done    Confidence (1--5)
+  ------- --------------------------------------- ------- -------------------
+  1       Arithmetic, numbers, and algebra        \[ \]   
+  2       Functions and graphs                    \[ \]   
+  3       Descriptive statistics and EDA          \[ \]   
+  4       Probability and statistical inference   \[ \]   
+  5       Linear algebra                          \[ \]   
+  6       Calculus and optimization               \[ \]   
+  7       Python and data-science tools           \[ \]   
+  8       Supervised machine learning             \[ \]   
+  9       Unsupervised learning                   \[ \]   
+  10      Feature engineering and evaluation      \[ \]   
+  11      Neural-network foundations              \[ \]   
+  12      Deep-learning architectures             \[ \]   
+  13      NLP, transformers, and LLMs             \[ \]   
+  14      Deployment and MLOps                    \[ \]   
+  15      Capstone projects                       \[ \]   
+
+### Confidence scale
+
+-   **1:** I have heard of it but cannot explain it.
+-   **2:** I understand the explanation but need help solving problems.
+-   **3:** I can solve basic problems with notes.
+-   **4:** I can solve practical problems independently.
+-   **5:** I can explain it, implement it, and identify its limitations.
+
+------------------------------------------------------------------------
+
+# Final guidance
+
+1.  **Prioritize foundations:** algebra, functions, probability,
+    statistics, linear algebra, and calculus.
+2.  **Practice actively:** solve problems on paper and implement them in
+    Python.
+3.  **Start ML early:** begin simple regression and classification as
+    soon as you understand the relevant basics.
+4.  **Avoid tutorial-only learning:** every major topic should produce
+    code, an experiment, or a written explanation.
+5.  **Learn evaluation carefully:** a model that performs well on
+    training data is not necessarily a useful model.
+6.  **Build engineering skills:** data pipelines, APIs, Docker, testing,
+    monitoring, and reproducibility matter in production ML.
+7.  **Learn LLMs after the foundations:** understand embeddings,
+    attention, retrieval, evaluation, and deployment rather than only
+    learning prompt templates.
+8.  **Revisit difficult mathematics:** mastery comes from repeated use,
+    not a single reading.
+
+**The goal is not to finish a mathematics checklist. The goal is to
+become an engineer who understands the data, mathematics, models,
+evaluation, and systems well enough to build reliable ML solutions.**
